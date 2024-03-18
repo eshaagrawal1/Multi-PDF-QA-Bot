@@ -9,17 +9,14 @@ os.environ["OPENAI_API_KEY"] = "sk-I6QpZwTwummiFJe3B3PBT3BlbkFJmbNAm9qgQ8QcIHzkJ
 Settings.llm = OpenAI(model="gpt-3.5-turbo")
 Settings.embed_model = OpenAIEmbedding(model="text-embedding-3-small")
 
-# Function to load and process PDFs
+
 def load_and_process_pdfs(pdf_paths):
-    # Implement your PDF loading and processing logic here
-    pass  # Placeholder for your logic
-
-# Function to build index
+    pass  
+    
 def build_index(processed_pdfs):
-    # Use llama-index to create the index here
-    pass  # Placeholder for your logic
 
-# Function to query index
+    pass 
+
 def query_index(question, index):
     response = index.as_query_engine(streaming=True).query(question)
     answers = []
@@ -44,4 +41,4 @@ if uploaded_files:
     if user_question:
         # Query index and display answer
         answer = query_index(user_question, index)
-        st.write(f"Answer: {answer}")  # Or format the answer as needed using other Streamlit functions
+        st.write(f"Answer: {answer}")
