@@ -4,7 +4,7 @@ from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "sk-Your Api Key"
 
 Settings.llm = OpenAI(model="gpt-3.5-turbo")
 Settings.embed_model = OpenAIEmbedding(model="text-embedding-3-small")
